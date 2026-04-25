@@ -8,6 +8,7 @@ function TerraInsights({ stats, anomalies, energy }) {
     if (stats && anomalies && energy) {
       generateInsight();
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [stats, anomalies, energy]);
 
   const generateInsight = () => {
